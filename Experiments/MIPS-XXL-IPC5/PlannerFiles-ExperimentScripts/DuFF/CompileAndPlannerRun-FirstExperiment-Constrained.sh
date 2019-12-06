@@ -1,0 +1,2 @@
+#!/bin/bash
+./compile ./Experiments/FirstExperiment/Planner/Constrained/PDDL/FirstExperiment-Constrained-PlanningProblem.pddl ./Experiments/FirstExperiment/Planner/Constrained/PDDL/FirstExperiment-Constrained-PlanningDomainModel.pddl

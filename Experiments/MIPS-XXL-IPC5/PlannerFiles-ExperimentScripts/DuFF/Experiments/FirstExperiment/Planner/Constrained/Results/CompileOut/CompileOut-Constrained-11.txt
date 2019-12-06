@@ -1,0 +1,62 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@ Solving problem = ./Experiments/FirstExperiment/Planner/Constrained/PDDL/SimplestwithAdditionalActions-Problem-sometime-before-constrained-autoTemplate.pddl @@
+@@         domain  = ./Experiments/FirstExperiment/Planner/Constrained/PDDL/SimplestwithAdditionalActions-Dom-withError-autoTemplate.pddl @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+This is not a Durative problem
+This is an ADL problem
+
+ff: parsing domain file
+domain 'CAVE-DIVING-ADL' defined
+ ... done.
+ff: parsing problem file
+problem 'CAVE-DIVING-ADL-P01' defined
+ ... done.
+
+
+warning: empty con/disjunction in domain definition. simplifying.
+
+
+warning: empty con/disjunction in domain definition. simplifying.
+
+
+ff: gtil_constraints can be simplified to TRUE. The empty plan satisfied it
+
+
+ff: gwithin_constraints can be simplified to TRUE. The empty plan satisfied it
+
+ splitt ltl formel 
+
+...Reading constraints...
+
+...ltl constraints done...
+
+grounded adl task
+end of grounded adl task
+...grounded domain, problem and ltl done.
+Checking automata files...
+a-numAutomata
+2
+...ltl2ba automata conversion done.
+Checking preference automata files...
+...ltl2ba preference conversion done.
+linking automata ...
+Checking automata files...
+
+...substitution done.
+Checking preference automata files...
+
+...substitution done.
+Checking automata files...
+...pddl automata read.
+Checking preference files...
+...pddl preference automata red.
+merging automata ...
+grounded-problem.pddl grounded-domain.pddl grounded-a-0.pddl
+  Reading grounded problem file grounded-problem.pddl...
+  Reading init state from grounded automata file grounded-a-0.pddl...
+  Reading goal state from grounded automata file grounded-a-0.pddl...
+  Reading grounded domain file grounded-domain.pddl...
+  Reading predicates from grounded automata file grounded-a-0.pddl...
+  Reading functions from grounded automata file grounded-a-0.pddl...
+  Reading actions from grounded automata file grounded-a-0.pddl...
+merging automata done...

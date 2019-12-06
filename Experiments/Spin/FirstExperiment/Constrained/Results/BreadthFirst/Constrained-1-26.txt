@@ -1,0 +1,61 @@
+ltl p0: ! ((<> ((Error==1))) && (<> ((CriticalVariable==14))))
+Depth=      10 States=      141 Transitions=      272 Memory=   128.195	
+Depth=      20 States= 1.43e+03 Transitions= 4.02e+03 Memory=   128.293	
+Depth=      30 States= 6.12e+03 Transitions= 1.99e+04 Memory=   128.684	
+Depth=      40 States= 1.78e+04 Transitions= 6.19e+04 Memory=   129.660	
+Depth=      50 States=  4.1e+04 Transitions= 1.47e+05 Memory=   131.613	t=     0.03 R=   1e+06
+Depth=      60 States= 8.01e+04 Transitions= 2.92e+05 Memory=   134.836	t=     0.05 R=   2e+06
+Depth=      70 States=  1.4e+05 Transitions= 5.13e+05 Memory=   139.621	t=      0.1 R=   1e+06
+Depth=      80 States= 2.22e+05 Transitions= 8.22e+05 Memory=   146.164	t=     0.16 R=   1e+06
+Depth=      90 States= 3.27e+05 Transitions= 1.22e+06 Memory=   154.367	t=     0.24 R=   1e+06
+Depth=     100 States=  4.5e+05 Transitions= 1.68e+06 Memory=   163.938	t=     0.34 R=   1e+06
+Depth=     110 States= 5.82e+05 Transitions= 2.17e+06 Memory=   174.094	t=     0.44 R=   1e+06
+Depth=     120 States= 7.15e+05 Transitions= 2.66e+06 Memory=   184.250	t=     0.55 R=   1e+06
+Depth=     130 States= 8.39e+05 Transitions= 3.12e+06 Memory=   193.723	t=     0.65 R=   1e+06
+Depth=     140 States= 9.47e+05 Transitions= 3.52e+06 Memory=   201.926	t=     0.74 R=   1e+06
+Depth=     145 States=    1e+06 Transitions= 3.71e+06 Memory=   206.027	t=     0.78 R=   1e+06
+Depth=     150 States= 1.03e+06 Transitions= 3.83e+06 Memory=   208.469	t=     0.81 R=   1e+06
+Depth=     160 States= 1.09e+06 Transitions= 4.05e+06 Memory=   213.156	t=     0.85 R=   1e+06
+Depth=     170 States= 1.14e+06 Transitions= 4.19e+06 Memory=   216.281	t=     0.89 R=   1e+06
+Depth=     180 States= 1.16e+06 Transitions= 4.28e+06 Memory=   218.234	t=      0.9 R=   1e+06
+Depth=     190 States= 1.17e+06 Transitions= 4.32e+06 Memory=   219.211	t=     0.91 R=   1e+06
+Depth=     200 States= 1.18e+06 Transitions= 4.33e+06 Memory=   219.602	t=     0.91 R=   1e+06
+Depth=     210 States= 1.18e+06 Transitions= 4.34e+06 Memory=   219.699	t=     0.91 R=   1e+06
+
+(Spin Version 6.4.8 -- 2 March 2018)
+	+ Breadth-First Search
+	+ Partial Order Reduction
+
+Full statespace search for:
+	never claim         	+ (p0)
+	assertion violations	+ (if within scope of claim)
+	cycle checks       	- (disabled by -DSAFETY)
+	invalid end states	- (disabled by never claim)
+
+State-vector 36 byte, depth reached 218, errors: 0
+  1179649 states, stored
+	1.17965e+06 nominal states (stored-atomic)
+  3158017 states, matched
+  4337666 transitions (= stored+matched)
+        0 atomic steps
+hash conflicts:     47816 (resolved)
+
+Stats on memory usage (in Megabytes):
+   72.000	equivalent memory usage for states (stored*(State-vector + overhead))
+   91.787	actual memory usage for states
+  128.000	memory used for hash table (-w24)
+  219.699	total actual memory usage
+
+
+unreached in proctype trans
+	(0 of 36 states)
+unreached in init
+	(0 of 3 states)
+unreached in claim p0
+	_spin_nvr.tmp:15, state 26, "((CriticalVariable==14))"
+	_spin_nvr.tmp:15, state 26, "(1)"
+	_spin_nvr.tmp:20, state 30, "-end-"
+	(2 of 30 states)
+
+pan: elapsed time 0.91 seconds
+pan: rate 1296317.6 states/second

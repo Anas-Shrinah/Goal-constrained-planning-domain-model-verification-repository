@@ -1,0 +1,38 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@ Solving problem = ./Experiments/FirstExperiment/Planner/Unconstrained/PDDL/SimplestwithAdditionalActions-Problem-unconstrained-autoTemplate.pddl @@
+@@         domain  = ./Experiments/FirstExperiment/Planner/Unconstrained/PDDL/SimplestwithAdditionalActions-Dom-withError-autoTemplate.pddl @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+This is not a Durative problem
+This is an ADL problem
+
+ff: parsing domain file
+domain 'CAVE-DIVING-ADL' defined
+ ... done.
+ff: parsing problem file
+problem 'CAVE-DIVING-ADL-P01' defined
+ ... done.
+
+
+grounded adl task
+end of grounded adl task
+...grounded domain, problem and ltl done.
+Checking automata files...
+...ltl2ba automata conversion done.
+Checking preference automata files...
+...ltl2ba preference conversion done.
+linking automata ...
+Checking automata files...
+
+...substitution done.
+Checking preference automata files...
+
+...substitution done.
+Checking automata files...
+...pddl automata read.
+Checking preference files...
+...pddl preference automata red.
+merging automata ...
+grounded-problem.pddl grounded-domain.pddl
+  Reading grounded problem file grounded-problem.pddl...
+  Reading grounded domain file grounded-domain.pddl...
+merging automata done...

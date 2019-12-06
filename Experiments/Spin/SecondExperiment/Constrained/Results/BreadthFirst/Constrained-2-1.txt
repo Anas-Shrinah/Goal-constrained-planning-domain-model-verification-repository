@@ -1,0 +1,51 @@
+ltl p0: ! ((<> ((Error==1))) && (<> ((CriticalVariable==1))))
+Depth=      10 States=      341 Transitions=      537 Memory=   128.195	
+Depth=      20 States= 4.73e+03 Transitions= 8.47e+03 Memory=   128.586	
+Depth=      30 States= 2.29e+04 Transitions= 4.27e+04 Memory=   130.246	
+Depth=      40 States= 7.03e+04 Transitions= 1.34e+05 Memory=   134.250	t=     0.03 R=   2e+06
+Depth=      50 States= 1.58e+05 Transitions= 3.05e+05 Memory=   141.379	t=     0.08 R=   2e+06
+Depth=      60 States= 2.82e+05 Transitions= 5.46e+05 Memory=   151.145	t=     0.15 R=   2e+06
+Depth=      70 States= 4.16e+05 Transitions= 8.09e+05 Memory=   161.496	t=     0.23 R=   2e+06
+Depth=      80 States=  5.3e+05 Transitions= 1.03e+06 Memory=   170.188	t=     0.29 R=   2e+06
+Depth=      90 States= 6.04e+05 Transitions= 1.18e+06 Memory=   175.852	t=     0.34 R=   2e+06
+Depth=     100 States= 6.41e+05 Transitions= 1.25e+06 Memory=   178.586	t=     0.36 R=   2e+06
+Depth=     110 States= 6.53e+05 Transitions= 1.27e+06 Memory=   179.562	t=     0.37 R=   2e+06
+Depth=     120 States= 6.55e+05 Transitions= 1.28e+06 Memory=   179.758	t=     0.37 R=   2e+06
+
+(Spin Version 6.4.8 -- 2 March 2018)
+	+ Breadth-First Search
+	+ Partial Order Reduction
+
+Full statespace search for:
+	never claim         	+ (p0)
+	assertion violations	+ (if within scope of claim)
+	cycle checks       	- (disabled by -DSAFETY)
+	invalid end states	- (disabled by never claim)
+
+State-vector 36 byte, depth reached 126, errors: 0
+   655361 states, stored
+	  655361 nominal states (stored-atomic)
+   622593 states, matched
+  1277954 transitions (= stored+matched)
+        0 atomic steps
+hash conflicts:      5751 (resolved)
+
+Stats on memory usage (in Megabytes):
+   40.000	equivalent memory usage for states (stored*(State-vector + overhead))
+   51.845	actual memory usage for states
+  128.000	memory used for hash table (-w24)
+  179.758	total actual memory usage
+
+
+unreached in proctype trans
+	(0 of 42 states)
+unreached in init
+	(0 of 3 states)
+unreached in claim p0
+	_spin_nvr.tmp:15, state 26, "((CriticalVariable==1))"
+	_spin_nvr.tmp:15, state 26, "(1)"
+	_spin_nvr.tmp:20, state 30, "-end-"
+	(2 of 30 states)
+
+pan: elapsed time 0.37 seconds
+pan: rate 1771245.9 states/second

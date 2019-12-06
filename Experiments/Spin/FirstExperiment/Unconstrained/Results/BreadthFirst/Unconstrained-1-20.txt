@@ -1,0 +1,36 @@
+ltl p0: ! (<> ((Error==1)))
+Depth=      10 States=      141 Transitions=      272 Memory=   128.195	
+Depth=      20 States= 1.43e+03 Transitions= 4.02e+03 Memory=   128.293	
+Depth=      30 States= 6.12e+03 Transitions= 1.99e+04 Memory=   128.684	
+Depth=      40 States= 1.77e+04 Transitions= 6.21e+04 Memory=   129.660	
+pan:1: assertion violated  !((Error==1)) (at depth 42)
+pan: wrote PromelaModel-FirstExperiment-Unconstrained.pml.trail
+
+(Spin Version 6.4.8 -- 2 March 2018)
+Warning: Search not completed
+	+ Breadth-First Search
+	+ Partial Order Reduction
+
+Full statespace search for:
+	never claim         	+ (p0)
+	assertion violations	+ (if within scope of claim)
+	cycle checks       	- (disabled by -DSAFETY)
+	invalid end states	- (disabled by never claim)
+
+State-vector 36 byte, depth reached 42, errors: 1
+    21257 states, stored
+	   21257 nominal states (stored-atomic)
+    54056 states, matched
+    75313 transitions (= stored+matched)
+        0 atomic steps
+hash conflicts:         8 (resolved)
+
+Stats on memory usage (in Megabytes):
+    1.297	equivalent memory usage for states (stored*(State-vector + overhead))
+    2.043	actual memory usage for states
+  128.000	memory used for hash table (-w24)
+  129.953	total actual memory usage
+
+
+
+pan: elapsed time 0.01 seconds

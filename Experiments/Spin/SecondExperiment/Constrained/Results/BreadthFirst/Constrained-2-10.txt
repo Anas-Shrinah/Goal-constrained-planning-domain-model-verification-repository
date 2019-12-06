@@ -1,0 +1,54 @@
+ltl p0: ! ((<> ((Error==1))) && (<> ((CriticalVariable==10))))
+Depth=      10 States=      253 Transitions=      513 Memory=   128.195	
+Depth=      20 States=    4e+03 Transitions= 1.24e+04 Memory=   128.488	
+Depth=      30 States= 2.34e+04 Transitions= 8.54e+04 Memory=   130.246	
+Depth=      40 States= 8.54e+04 Transitions= 3.34e+05 Memory=   135.715	t=     0.08 R=   1e+06
+Depth=      50 States= 2.26e+05 Transitions= 9.19e+05 Memory=   147.434	t=     0.21 R=   1e+06
+Depth=      60 States= 4.67e+05 Transitions= 1.94e+06 Memory=   167.062	t=     0.46 R=   1e+06
+Depth=      70 States= 7.94e+05 Transitions= 3.32e+06 Memory=   192.746	t=      0.8 R=   1e+06
+Depth=      75 States=    1e+06 Transitions=  4.2e+06 Memory=   208.566	t=        1 R=   1e+06
+Depth=      80 States= 1.15e+06 Transitions= 4.79e+06 Memory=   219.895	t=     1.14 R=   1e+06
+Depth=      90 States= 1.45e+06 Transitions= 6.03e+06 Memory=   243.234	t=     1.43 R=   1e+06
+Depth=     100 States= 1.66e+06 Transitions= 6.86e+06 Memory=   259.250	t=     1.63 R=   1e+06
+Depth=     110 States= 1.78e+06 Transitions= 7.28e+06 Memory=   267.844	t=     1.73 R=   1e+06
+Depth=     120 States= 1.82e+06 Transitions= 7.43e+06 Memory=   271.262	t=     1.77 R=   1e+06
+Depth=     130 States= 1.83e+06 Transitions= 7.47e+06 Memory=   272.141	t=     1.78 R=   1e+06
+Depth=     140 States= 1.83e+06 Transitions= 7.47e+06 Memory=   272.336	t=     1.78 R=   1e+06
+
+(Spin Version 6.4.8 -- 2 March 2018)
+	+ Breadth-First Search
+	+ Partial Order Reduction
+
+Full statespace search for:
+	never claim         	+ (p0)
+	assertion violations	+ (if within scope of claim)
+	cycle checks       	- (disabled by -DSAFETY)
+	invalid end states	- (disabled by never claim)
+
+State-vector 36 byte, depth reached 144, errors: 0
+  1835009 states, stored
+	1.83501e+06 nominal states (stored-atomic)
+  5636097 states, matched
+  7471106 transitions (= stored+matched)
+        0 atomic steps
+hash conflicts:    174749 (resolved)
+
+Stats on memory usage (in Megabytes):
+  112.000	equivalent memory usage for states (stored*(State-vector + overhead))
+  144.424	actual memory usage for states
+  128.000	memory used for hash table (-w24)
+  272.336	total actual memory usage
+
+
+unreached in proctype trans
+	(0 of 42 states)
+unreached in init
+	(0 of 3 states)
+unreached in claim p0
+	_spin_nvr.tmp:15, state 26, "((CriticalVariable==10))"
+	_spin_nvr.tmp:15, state 26, "(1)"
+	_spin_nvr.tmp:20, state 30, "-end-"
+	(2 of 30 states)
+
+pan: elapsed time 1.78 seconds
+pan: rate 1030903.9 states/second

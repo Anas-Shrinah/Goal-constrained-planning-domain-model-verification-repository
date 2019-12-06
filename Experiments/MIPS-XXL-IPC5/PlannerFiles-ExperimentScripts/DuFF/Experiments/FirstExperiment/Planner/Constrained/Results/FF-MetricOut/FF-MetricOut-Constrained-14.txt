@@ -1,0 +1,58 @@
+
+ff: parsing domain file
+domain 'GROUNDED-ADL-CAVE-DIVING-ADL' defined
+ ... done.
+ff: parsing problem file
+problem 'GROUNDED-ADL-CAVE-DIVING-ADL-P01' defined
+ ... done.
+
+
+warning: empty con/disjunction in domain definition. simplifying.
+
+
+warning: empty con/disjunction in domain definition. simplifying.
+
+
+warning: empty con/disjunction in domain definition. simplifying.
+
+
+warning: empty con/disjunction in domain definition. simplifying.
+
+
+warning: empty con/disjunction in domain definition. simplifying.
+
+
+warning: empty con/disjunction in domain definition. simplifying.
+
+
+warning: empty con/disjunction in domain definition. simplifying.
+
+
+warning: empty con/disjunction in domain definition. simplifying.
+
+
+warning: empty con/disjunction in domain definition. simplifying.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+advancing to distance:   15
+                         14
+                         13
+                         12
+                         11
+                         10
+                          9
+                          8
+                          7
+                          6
+                          5
+                          4
+                          3
+                          2
+                          1
